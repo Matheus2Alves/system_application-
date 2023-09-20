@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(to right, rgb(212, 206, 251), rgb(181, 254, 225));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#backArrow {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+#backArrow:hover {
+    background-color: rgba(154, 153, 153, 0.161);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+h1.geotap {
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5em;
+    color: black;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 580px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-size: 1em;
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.227);
+}
+
+#form h1 {
+    color: black;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(195, 239, 250);
+    border: none;
+    color: black;
+    width: 100%;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.input-control input {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+
+}
+
+.input-control.success input {
+    border-color: rgb(94, 230, 94);
+}
+
+.input-control.error input {
+    border-color: rgb(237, 94, 94);
+}
+
+.input-control .error {
+    color: rgb(237, 94, 94);
+    font-size: .7em;
+    height: 14px;
+}
